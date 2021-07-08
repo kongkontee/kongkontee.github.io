@@ -1,0 +1,7 @@
+.letter{
+    color:blue;
+}
+.letter:hover{
+    color:aqua;
+    width: 100px;
+}

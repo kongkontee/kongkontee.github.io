@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Week 3</title>
+
+        <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+
+    <script 
+        src="https://code.jquery.com/jquery-3.6.0.slim.min.js" 
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" 
+        crossorigin="anonymous">
+    </script>
+
+        <script>
+            let count = 0;
+
+                function increaseCounter() {
+                    $("#counter").text(parseInt($("#counter").text())+1);
+                }
+                function decreaseCounter() {
+                    $("#counter").text(parseInt($("#counter").text())-1);
+                }
+                function resetCounter() {
+                    $("#counter").text("0");
+                }
+
+        </script>
+    </head>
+    <body>
+        <!-- <button onclick="alert(count)" class="btn btn-primary">Say HI</button>
+        <button onclick="console.log('HI')" class="btn btn-primary">Btn</button>
+        <button onclick="showNumber()" class="btn btn-primary">Click Me</button> -->
+
+        <div class="d-flex flex-column justify-content-center align-item-center mt-4">
+            <h2 id="counter">0</h2>
+            <button onclick="decreaseCounter()" class="btn btn-primary">-1</button>
+            <button onclick="resetCounter()" class="btn btn-primary">reset</button>
+            <button onclick="increaseCounter()" class="btn btn-primary">+1</button>
+        </div>
+    </body>
+</html>
